@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MAIN CONTAINER */
+.container {
+  width: 100%;
+  max-width: 380px;
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* TITLE */
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+/* OUTPUT */
+.output {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.output input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.output button {
+  padding: 10px 14px;
+  background: #22c55e;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* SETTINGS */
+.settings {
+  margin-bottom: 15px;
+}
+
+.settings label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin: 8px 0;
+}
+
+.settings input[type="checkbox"] {
+  transform: scale(1.2);
+}
+
+.settings input[type="range"] {
+  width: 100%;
+  margin-top: 6px;
+}
+
+/* GENERATE BUTTON */
+.generate {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  background: #3b82f6;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* ---------- MOBILE OPTIMIZATION ---------- */
+@media (max-width: 480px) {
+  .container {
+    margin: 10px;
+    padding: 16px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .output input {
+    font-size: 0.85rem;
+  }
+
+  .output button {
+    padding: 8px 10px;
+    font-size: 0.85rem;
+  }
+
+  .generate {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* ---------- THEMES ---------- */
+body.dark {
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: #fff;
+}
+
+body.light {
+  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+  color: #020617;
+}
+
+/* CARD */
+body.light .container {
+  background: #ffffff;
+}
+
+body.dark .container {
+  background: #1e293b;
+}
+
+/* TOGGLE BUTTON */
+.theme-toggle {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 5px;
+}
+
+.theme-toggle button {
+  background: transparent;
+  border: 1px solid currentColor;
+  border-radius: 20px;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+
+/* INPUTS */
+body.light input {
+  background: #f1f5f9;
+  color: #020617;
+}
+
+body.dark input {
+  background: #020617;
+  color: #fff;
+}
+
+/* BUTTON COLORS */
+body.light .generate {
+  background: #2563eb;
+  color: white;
+}
+
+body.dark .generate {
+  background: #3b82f6;
+  color: white;
+}
+
+
+.footer {
+  margin-top: 25px;
+  font-size: 13px;
+  opacity: 0.8;
+  text-align: center;
+}
+.footer a {
+  color: inherit;
+  text-decoration:dashed;
+}
