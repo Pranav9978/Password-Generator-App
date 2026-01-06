@@ -153,7 +153,7 @@ export default function App() {
       {/* ✅ FOOTER */}
       <footer className="footer">
         <p>
-          © {new Date().getFullYear()} Weather App | Developed by{" "}
+          © {new Date().getFullYear()} Password Generator App | Developed by{" "}
           <a
             href="https://pranav-portfolio-theta.vercel.app/"
             target="_blank"
